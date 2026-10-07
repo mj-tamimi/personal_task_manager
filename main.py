@@ -23,4 +23,4 @@ tasks.append(f"""___
 ___""")
 
 with open("task.txt", "a") as file:
-    file.write(f"All tasks: {tasks}")
+    file.write(f"Name: {name} | All tasks: {tasks}")
