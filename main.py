@@ -24,7 +24,7 @@ while True:
     new_task = input("Enter a task (or 'q' to quit): ")
     if new_task.lower() == "q":
         break
-    tasks.append(f"  -Title: {new_task}\n  -Status: Pending...")
+    tasks.append(f"  -Title: {new_task}\n  -Status: Pending...\n Priority: Medium")
 
 
 with open("task.txt", "a") as file:
