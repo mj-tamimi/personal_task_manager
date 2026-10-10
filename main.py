@@ -20,24 +20,12 @@ new_task = input("Please enter your new task: ")
 
 tasks = []
 
-tasks.append(f"""___
-      -Title: {new_task}
-      -Status: Pending...
-___""")
+while True:
+    new_task = input("Enter a task (or 'q' to quit): ")
+    if new_task.lower() == "q":
+        break
+    tasks.append(f"  -Title: {new_task}\n  -Status: Pending...")
 
-new_task = input("Please enter your new task: ")
-
-tasks.append(f"""___
-      -Title: {new_task}
-      -Status: Pending...
-___""")
-
-new_task = input("Please enter your new task: ")
-
-tasks.append(f"""___
-      -Title: {new_task}
-      -Status: Pending...
-___""")
 
 with open("task.txt", "a") as file:
-    file.write(f"Name: {name} | All tasks: {tasks}")
+    file.write(f"Name: {name} | All tasks: {tasks}\n")
