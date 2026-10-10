@@ -1,4 +1,5 @@
 __pycache__/
 task.txt
 *.log
+
 .env
