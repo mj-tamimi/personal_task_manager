@@ -24,7 +24,21 @@ while True:
     new_task = input("Enter a task (or 'q' to quit): ")
     if new_task.lower() == "q":
         break
-    tasks.append(f"  -Title: {new_task}\n  -Status: Pending...\n Validation: Medium")
+    
+    if True:
+        q1 = input("Is the task done? (y/n)")
+        delete = input("Do you want to delete the task? (y/n)")
+        
+        if delete == "y" or delete == "yes":
+            print("Task deleted.")
+            break
+        else:
+            if q1 == "y" or q1 == "yes":
+                tasks.append(f"  -Title: {new_task}\n  -Status: Done\n Validation: Medium")
+            else:
+                tasks.append(f"  -Title: {new_task}\n  -Status: Pending...\n Validation: Medium")
+        
+        
 
 
 with open("task.txt", "a") as file:
