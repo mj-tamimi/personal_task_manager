@@ -37,7 +37,7 @@ It's a small project to practice file I/O, environment variables, and basic cont
 - 👤 **User name input** — recorded alongside the tasks.
 - ➕ **Unlimited task entry** — keep adding until you type `q`.
 - 💾 **Persistent storage** — tasks are appended to `task.txt`.
-- 🌱 **Environment-based config** — secrets stay out of the source code.
+- 🌱 **Environment-based config** — personal information, like the password, stays out of source code.
 
 ## Project Structure
 task-manager/
@@ -115,7 +115,7 @@ Name: Alex | All tasks: ['  -Title: Buy groceries\n  -Status: Pending...', '  -T
 - [x] Tasks get saved to task.txt
 - [ ] Mark tasks as done / pending
 - [ ] Edit or delete existing tasks
-- [ ] View previous tasks from task.txt
+- [x] View previous tasks from task.txt
 - [ ] Save tasks in JSON instead of a plain string
 - [ ] Add timestamps to each task
 
